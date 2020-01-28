@@ -1,0 +1,57 @@
+{
+  "name": "tuzex/security-user",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edo Barnas",
+      "email": "iam@edobarnas.com"
+    }
+  ],
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Tuzex\\Security\\User\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tuzex\\Security\\User\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "7.4.*",
+    "ramsey/uuid": "3.8.*",
+    "symfony/security-core": "5.0.*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^0.12.7",
+    "phpstan/phpstan-phpunit": "^0.12.6",
+    "symplify/easy-coding-standard": "^7.2"
+  },
+  "scripts": {
+    "check": [
+      "@composer validate --no-check-all --strict"
+    ],
+    "test": [
+      "phpstan analyse tests src -l max -c phpstan.neon"
+    ],
+    "cs": [
+      "ecs check src tests --config coding-standard.yaml"
+    ],
+    "cs-fix": [
+      "ecs check src tests --config coding-standard.yaml --fix",
+      "@cs"
+    ]
+  },
+  "scripts-descriptions": {
+    "check": "Validate the composer.json file.",
+    "test": "Run unit tests and the static analysis of codes.",
+    "cs": "Run coding standards checkers.",
+    "cs-fix": "Fix-ups the code in accordance with our coding standards."
+  }
+}
