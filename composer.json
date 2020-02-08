@@ -25,6 +25,7 @@
   },
   "require": {
     "php": "7.4.*",
+    "phpunit/phpunit": "^9.0",
     "ramsey/uuid": "3.9.*",
     "symfony/security-core": "5.0.*"
   },
@@ -38,8 +39,10 @@
     "check": [
       "@check:composer"
     ],
+    "test:unit": "phpunit -c phpunit.xml tests",
     "test:static": "phpstan analyse tests src -l max -c phpstan.neon",
     "test": [
+      "@test:unit",
       "@test:static"
     ],
     "cs": [
@@ -52,7 +55,7 @@
   },
   "scripts-descriptions": {
     "check": "Validate the composer.json file.",
-    "test": "Run unit tests and the static analysis of codes.",
+    "test": "Run all unit tests and the static analysis of codes.",
     "cs": "Run coding standards checkers.",
     "cs-fix": "Fix-ups the code in accordance with our coding standards."
   }
