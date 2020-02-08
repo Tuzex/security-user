@@ -25,13 +25,13 @@
   },
   "require": {
     "php": "7.4.*",
-    "phpstan/phpstan": "^0.12.9",
-    "ramsey/uuid": "3.8.*",
+    "ramsey/uuid": "3.9.*",
     "symfony/security-core": "5.0.*"
   },
   "require-dev": {
-    "phpstan/phpstan-phpunit": "^0.12.6",
-    "symplify/easy-coding-standard": "^7.2"
+    "phpstan/phpstan": "0.12.*",
+    "phpstan/phpstan-phpunit": "0.12.*",
+    "symplify/easy-coding-standard": "7.2.*"
   },
   "scripts": {
     "check": [
