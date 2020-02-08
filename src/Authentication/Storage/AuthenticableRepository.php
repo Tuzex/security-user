@@ -8,5 +8,5 @@ use Tuzex\Security\User\Behavior\Authenticable;
 
 interface AuthenticableRepository
 {
-    public function findByUsername(string $username): Authenticable;
+    public function findByUsername(string $username): ?Authenticable;
 }
