@@ -34,18 +34,19 @@
     "symplify/easy-coding-standard": "7.2.*"
   },
   "scripts": {
+    "check:composer": "@composer validate --no-check-all --strict",
     "check": [
-      "@composer validate --no-check-all --strict"
+      "@check:composer"
     ],
-    "test-static": "phpstan analyse tests src -l max -c phpstan.neon",
+    "test:static": "phpstan analyse tests src -l max -c phpstan.neon",
     "test": [
-      "@test-static"
+      "@test:static"
     ],
     "cs": [
-      "ecs check src tests --config coding-standard.yaml"
+      "ecs check src tests --config easy-coding-standard.yml"
     ],
-    "cs-fix": [
-      "ecs check src tests --config coding-standard.yaml --fix",
+    "cs:fix": [
+      "ecs check src tests --config easy-coding-standard.yml --fix",
       "@cs"
     ]
   },

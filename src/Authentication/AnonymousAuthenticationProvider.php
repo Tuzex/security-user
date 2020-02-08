@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tuzex\Security\User\Authentication;
 
-use Tuzex\Security\User\Authentication\Token\AnonymousToken;
 use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface as AuthenticationProvider;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface as Token;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Exception\BadCredentialsException;
+use Tuzex\Security\User\Authentication\Token\AnonymousToken;
 
 final class AnonymousAuthenticationProvider implements AuthenticationProvider
 {

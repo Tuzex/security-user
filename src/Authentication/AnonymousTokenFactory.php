@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tuzex\Security\User\Authentication;
 
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface as Token;
 use Tuzex\Security\User\AnonymousUser;
 use Tuzex\Security\User\Authentication\Token\AnonymousToken;
 use Tuzex\Security\User\Util\IdentifierGenerator;
-use Symfony\Component\Security\Core\Authentication\Token\TokenInterface as Token;
 
 final class AnonymousTokenFactory implements TokenFactory
 {

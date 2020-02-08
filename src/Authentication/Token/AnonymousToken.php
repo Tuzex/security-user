@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tuzex\Security\User\Authentication\Token;
 
-use Tuzex\Security\User\AnonymousUser;
 use Symfony\Component\Security\Core\Authentication\Token\AbstractToken;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface as Token;
+use Tuzex\Security\User\AnonymousUser;
 
 final class AnonymousToken extends AbstractToken implements Token
 {

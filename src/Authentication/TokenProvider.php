@@ -20,7 +20,7 @@ final class TokenProvider
     public function provide(): Token
     {
         $token = $this->tokenStorage->getToken();
-        if(!$token instanceof Token) {
+        if (!$token instanceof Token) {
             throw new TokenNotFoundException();
         }
 

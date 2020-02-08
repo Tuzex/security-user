@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tuzex\Security\User\Authentication;
 
-use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
-use Tuzex\Security\User\KnownUser;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface as User;
 use Symfony\Component\Security\Core\User\UserProviderInterface as UserProvider;
+use Tuzex\Security\User\Authentication\Storage\AuthenticableRepository;
+use Tuzex\Security\User\KnownUser;
 
 final class KnownUserProvider implements UserProvider
 {
