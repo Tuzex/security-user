@@ -10,7 +10,7 @@ use Tuzex\Security\User\Util\UuidIdentifierGenerator;
 
 final class UuidIdentifierGeneratorTest extends TestCase
 {
-    public function testOutput(): void
+    public function testItReturnsValidUuid(): void
     {
         $identifierGenerator = new UuidIdentifierGenerator();
 
