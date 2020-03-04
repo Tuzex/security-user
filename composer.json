@@ -1,6 +1,6 @@
 {
   "name": "tuzex/security-user",
-  "description": "",
+  "description": "Unified behavior of the user for SymfonySecurity 4.3<",
   "type": "library",
   "license": "MIT",
   "authors": [
