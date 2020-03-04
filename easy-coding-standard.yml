@@ -5,7 +5,3 @@ parameters:
     - 'php71'
     - 'psr2'
     - 'symfony'
-
-services:
-  SlamCsFixer\FinalInternalClassFixer: ~
-

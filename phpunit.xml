@@ -1,4 +1,9 @@
 <phpunit bootstrap="tests/bootstrap.php" colors="true" verbose="true">
+    <extensions>
+        <extension class="Tuzex\Security\User\Test\Hook\BypassFinalHook"/>
+        <extension class="Tuzex\Security\User\Test\Hook\CloseMockeryHook"/>
+    </extensions>
+
     <testsuite name="default">
         <directory>tests</directory>
     </testsuite>
