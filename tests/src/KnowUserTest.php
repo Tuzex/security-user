@@ -23,18 +23,6 @@ final class KnowUserTest extends TestCase
         $this->assertEmpty($user->getSalt());
     }
 
-    /**
-     * @dataProvider loadData
-     */
-    public function testItErasesPassword(string $identifier, string $username, string $password, array $roles): void
-    {
-        $user = new KnownUser($identifier, $username, $password, $roles);
-
-        $user->eraseCredentials();
-
-        $this->assertEmpty($user->getPassword());
-    }
-
     public function loadData(): array
     {
         return [

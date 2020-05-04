@@ -49,6 +49,6 @@ final class KnownUser implements User, Identifiable, Authenticable
 
     public function eraseCredentials(): void
     {
-        $this->password = '';
+        return;
     }
 }
