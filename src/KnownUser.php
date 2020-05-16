@@ -12,6 +12,10 @@ final class KnownUser implements User, Identifiable, Authenticable
     private string $id;
     private string $username;
     private string $password;
+
+    /**
+     * @var string[]
+     */
     private array $roles;
 
     public function __construct(string $id, string $username, string $password, array $roles = [])
