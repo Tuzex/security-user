@@ -3,6 +3,10 @@ parameters:
         - %rootDir%/../../../vendor/autoload.php
 
     checkMissingIterableValueType: false
+    ignoreErrors:
+        -
+            message: '#Parameter \#1 \$user of method Symfony\\Component\\Security\\Core\\Authentication\\Token\\AbstractToken::setUser\(\) expects string|Stringable|Symfony\\Component\\Security\\Core\\User\\UserInterface, Tuzex\\Security\\User\\AnonymousUser given.#'
+            path: 'src\Authentication\Token\AnonymousToken.php'
 
 includes:
   - vendor/phpstan/phpstan-mockery/extension.neon
