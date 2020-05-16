@@ -22,8 +22,9 @@ final class AnonymousTokenFactory implements TokenFactory
 
     public function create(): Token
     {
-        $identifier = $this->identifierGenerator->generate();
-        $user = new AnonymousUser($identifier);
+        $user = new AnonymousUser(
+            $this->identifierGenerator->generate()
+        );
 
         return new AnonymousToken($user, $this->secret);
     }
