@@ -3,5 +3,5 @@ parameters:
     - 'clean-code'
     - 'dead-code'
     - 'php71'
-    - 'psr2'
+    - 'psr12'
     - 'symfony'
