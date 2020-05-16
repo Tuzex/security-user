@@ -14,6 +14,9 @@ use Tuzex\Security\User\Authentication\TokenProvider;
 use Tuzex\Security\User\User;
 use Tuzex\Security\User\UserAccessor;
 
+/**
+ * @deprecated since 3.0
+ */
 final class UserAccessorTest extends TestCase
 {
     private const SUPPORTED = true;

@@ -7,6 +7,9 @@ namespace Tuzex\Security\User;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Tuzex\Security\User\Authentication\TokenProvider;
 
+/**
+ * @deprecated since 3.0
+ */
 final class UserAccessor
 {
     private TokenProvider $tokenProvider;
